@@ -1,11 +1,12 @@
 import SiteHeader from "../SiteHeader/SiteHeader";
 import SiteFooter from "../SiteFooter/SiteFooter";
 import MainContent from "../MainContent/MainContent";
+import "../../assets/css/root.css";
 
 function Root() {
   return (
     <>
-      <div>
+      <div className="rootWrapper">
         <div>
           <SiteHeader />
           <MainContent />

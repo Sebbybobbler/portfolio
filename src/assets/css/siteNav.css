@@ -1,0 +1,37 @@
+.activeLink {
+  text-decoration: none;
+  gap: 12px;
+  padding-bottom: 12px;
+  display: inline-block; /* Display inline block */
+  position: relative; /* Set position relative */
+  color: #160f29; /* Set text color */
+}
+
+.inactiveLink {
+  text-decoration: none;
+  gap: 12px;
+  padding-bottom: 12px;
+  display: inline-block; /* Display inline block */
+  position: relative; /* Set position relative */
+  color: #160f29; /* Set text color */
+}
+
+.activeLink:after,
+.inactiveLink:after {
+  content: ""; /* Add content after the element */
+  position: absolute; /* Position absolute for pseudo-element */
+  width: 100%; /* Full width */
+  transform: scaleX(0); /* Initial scale of 0 for underline effect */
+  height: 2px; /* Height of the underline */
+  bottom: 0; /* Align to bottom */
+  left: 0; /* Align to left */
+  background-color: #160f29; /* Background color of the underline */
+  transform-origin: bottom right; /* Set transform origin */
+  transition: transform 0.25s ease-out; /* Transition effect for the underline */
+}
+
+.activeLink:hover:after,
+.inactiveLink:hover:after {
+  transform: scaleX(1); /* Scale the underline on hover */
+  transform-origin: bottom left; /* Set transform origin */
+}

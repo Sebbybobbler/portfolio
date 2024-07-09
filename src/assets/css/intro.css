@@ -1,0 +1,31 @@
+.contentBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  align-items: center;
+  margin: 1em 0;
+  width: 100%;
+}
+
+.contentBoxIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentBoxIntro h4 {
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.contentIntroButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.contentIntroButtons button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+}
