@@ -26,13 +26,13 @@
 }
 
 .homeBioBody p {
-  text-align: center;
   line-height: 25px;
   color: white;
 }
 
 .homeBioSkills {
   background-color: whitesmoke;
+  line-height: 25px;
   padding: 0 2em;
   margin: 0 0;
 }
