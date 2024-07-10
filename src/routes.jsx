@@ -1,7 +1,7 @@
 import Root from "./components/Root/Root";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
+import ProjectView from "./components/ProjectView/ProjectView";
 
 const routes = [
   {
@@ -18,7 +18,7 @@ const routes = [
       },
       {
         path: "projects",
-        element: <Projects />,
+        element: <ProjectView />,
       },
     ],
   },

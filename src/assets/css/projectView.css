@@ -1,0 +1,27 @@
+.projectHeading {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  align-items: center;
+  margin: 0 0;
+  width: 100%;
+}
+
+.projectHeading h4 {
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.groupProjectSection {
+  background: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.reactProjectSection {
+  background: white;
+}
+
+.backendProjectSection {
+  background: black;
+}
