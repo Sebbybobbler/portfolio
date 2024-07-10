@@ -27,7 +27,6 @@ function ProjectCard({ state }) {
 }
 function Projects(props) {
   const input = props.project.slice(0, props.n);
-  console.log(input);
   let [projectCardAdder, setProjectCardAdder] = useState(
     input.map((item) => item)
   );
