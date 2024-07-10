@@ -12,27 +12,50 @@
   background-position: center;
   background-size: cover;
   background-image: url("./cv-pic.jpg");
+  margin-bottom: 16px;
 }
 
 .homeBioHeading h3 {
   font-weight: 300;
 }
 
-.homeBioBody {
+.homeBioBlack {
   background-color: black;
   padding: 0 2em;
   margin: 1em 0;
-  margin-bottom: 0;
+  margin: 0 0;
 }
 
-.homeBioBody p {
+.homeBioBlack p {
   line-height: 25px;
   color: white;
 }
 
-.homeBioSkills {
+.homeBioGrey {
   background-color: whitesmoke;
   line-height: 25px;
   padding: 0 2em;
   margin: 0 0;
+}
+
+.homeBioNav {
+  color: whitesmoke;
+}
+
+.homePic {
+  width: 90%;
+}
+
+.homeBioContactHeading {
+  display: flex;
+  color: whitesmoke;
+  justify-content: center;
+}
+
+.homeBioContactButton {
+  display: flex;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
 }
