@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import "../../assets/css/projects.css";
 // import banana from "./banana-portfolio.png";
@@ -43,7 +44,7 @@ function Projects(props) {
     }
   }, [projectCardAdder]);
 
-  function handleClick(event) {
+  function handleClick() {
     if (projectCardAdder.length === props.project.length) {
       return;
     }
