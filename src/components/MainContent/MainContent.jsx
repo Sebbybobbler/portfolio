@@ -1,9 +1,10 @@
 import { Outlet } from "react-router-dom";
+import "../../assets/css/mainContent.css";
 
 function MainContent() {
   return (
     <>
-      <div >
+      <div className="mainContentWrapper">
         <Outlet />
       </div>
     </>
