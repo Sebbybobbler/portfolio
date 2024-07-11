@@ -31,6 +31,18 @@ body {
   animation: gradient 11s ease infinite;
 }
 
+@media (min-width: 1300px) {
+  p {
+    font-size: larger;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: x-large;
+  }
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Intro from "../Intro/Intro";
 import "../../assets/css/home.css";
 import { NavLink } from "react-router-dom";

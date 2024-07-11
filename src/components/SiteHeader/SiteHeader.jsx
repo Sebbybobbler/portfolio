@@ -12,7 +12,6 @@ function SiteHeader() {
   return (
     <div className="headerWrapper">
       <h2 className="headerInitials">SD</h2>
-
       <img
         className="headerBurgerIcon"
         title="hamburger icons"

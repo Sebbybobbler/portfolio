@@ -8,7 +8,7 @@ function SiteNav() {
     { label: "Contact", url: "/contact" },
   ];
   return (
-    <div>
+    <>
       <nav>
         {navLinks.map((navLink) => (
           <NavLink
@@ -22,7 +22,7 @@ function SiteNav() {
           </NavLink>
         ))}
       </nav>
-    </div>
+    </>
   );
 }
 

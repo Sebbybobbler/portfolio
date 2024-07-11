@@ -7,11 +7,9 @@ function Root() {
   return (
     <>
       <div className="rootWrapper">
-        <div>
-          <SiteHeader />
-          <MainContent />
-          <SiteFooter />
-        </div>
+        <SiteHeader />
+        <MainContent />
+        <SiteFooter />
       </div>
     </>
   );

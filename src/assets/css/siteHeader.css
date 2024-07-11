@@ -8,6 +8,8 @@
   background-color: white;
   z-index: 2;
   align-items: center;
+  align-self: center;
+  max-width: 1300px;
 }
 
 .headerWrapper nav {
@@ -45,4 +47,36 @@
 }
 .show {
   display: block;
+}
+
+@media (min-width: 1024px) {
+  .headerBurgerIcon {
+    display: none;
+  }
+  .noShow {
+    display: flex;
+    width: 100%;
+  }
+  .show {
+    display: inline-block;
+  }
+  .headerWrapper {
+    align-items: center;
+  }
+  .headerWrapper nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+    width: 97%;
+    overflow: visible;
+    top: 0;
+    gap: 12px;
+    margin: 1em 0;
+  }
+  .headerWrapper nav a {
+    padding: 0;
+  }
 }

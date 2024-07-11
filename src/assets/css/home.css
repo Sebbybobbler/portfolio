@@ -3,12 +3,14 @@
   flex-direction: column;
   align-items: center;
   z-index: 1;
+  max-width: 1300px;
 }
 
 .picAndText {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1300px;
 }
 
 .homeHeadingSelfie {
@@ -71,6 +73,9 @@
 
 .homeContact {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .homeBioContactHeading {
   display: flex;
@@ -83,6 +88,8 @@
   border: 1px solid black;
   padding: 1em;
   margin: 1em;
+  width: 40%;
+  max-width: 200px;
 }
 
 @media (min-width: 1024px) {
@@ -102,5 +109,18 @@
     height: 200px;
     text-align: center;
     justify-content: center;
+  }
+}
+
+@media (min-width: 1300px) {
+  .homeWrapper p {
+    font-size: larger;
+  }
+  .homeWrapper img {
+    height: 400px;
+  }
+  .homeBioBlack,
+  .homeBioGrey {
+    height: 400px;
   }
 }
