@@ -1,11 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import "../../assets/css/projects.css";
-// import banana from "./banana-portfolio.png";
-// import planet from "./planet-portfolio.png";
-// import adventures from "./spaceadventure-portfolio.png";
-// import filter from "../../assets/images/filter-portfolio.png";
-// import homer from "../../assets/images/homers-website.png";
+import FadeIn from "react-fade-in";
 
 function ProjectCard({ state }) {
   const projectCard = state.map((item) => {
@@ -19,7 +15,7 @@ function ProjectCard({ state }) {
       >
         <h4>{item.title}</h4>
         <img src={item.image} alt={item.alt} />
-        <span className="description">{item.description}</span>
+        <p className="description">{item.description}</p>
       </div>
     );
   });
@@ -61,7 +57,9 @@ function Projects(props) {
 
   return (
     <div className="projectComponent">
-      <ProjectCard state={projectCardAdder} />
+      <FadeIn delay={200} transitionDuration={500}>
+        <ProjectCard state={projectCardAdder} />
+      </FadeIn>
       {isButton}
     </div>
   );
