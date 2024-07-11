@@ -18,14 +18,21 @@
   font-weight: lighter;
 }
 
-.contentIntroButtons {
+.contentIntroButtonsWrapper {
   display: flex;
   justify-content: center;
 }
 
-.contentIntroButtons button {
+.contentIntroButtons {
+  color: black;
   background-color: transparent;
   border: 1px solid black;
   padding: 1em;
   margin: 1em;
+  text-decoration: none;
+}
+
+.contentIntroButtons:hover {
+  color: whitesmoke;
+  background-color: black;
 }

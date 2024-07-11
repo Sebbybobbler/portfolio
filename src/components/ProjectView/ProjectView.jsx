@@ -123,7 +123,7 @@ function ProjectView() {
       <div className="groupProjectSection">
         <Projects project={groupProjects} n={3} />
       </div>
-      <div className="projectHeading">
+      <div className="projectHeading projectHeadingLater">
         <h4>
           <em>React Projects </em>
         </h4>
@@ -131,7 +131,7 @@ function ProjectView() {
       <div className="reactProjectSection">
         <Projects project={reactProjects} n={2} />
       </div>
-      <div className="projectHeading">
+      <div className="projectHeading projectHeadingLater">
         <h4>
           <em>Backend Projects</em>
         </h4>
@@ -139,7 +139,7 @@ function ProjectView() {
       <div className="backendProjectSection">
         <Projects project={backendProjects} n={2} />
       </div>
-      <div className="projectHeading">
+      <div className="projectHeading projectHeadingLater">
         <h4>
           <em>Other Projects</em>
         </h4>

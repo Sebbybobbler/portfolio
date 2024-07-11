@@ -7,11 +7,17 @@
   width: 100%;
   max-width: 1300px;
   height: 265px;
+  margin-bottom: 0;
 }
 
 .projectHeading h4 {
   text-decoration: none;
   font-weight: lighter;
+}
+
+.projectHeadingLater {
+  justify-content: center;
+  margin: 0;
 }
 
 .groupProjectSection {

@@ -1,4 +1,5 @@
 import "../../assets/css/intro.css";
+import { NavLink } from "react-router-dom";
 function Intro() {
   return (
     <div className="contentBoxWrapper">
@@ -10,13 +11,21 @@ function Intro() {
         <h4>
           <em>Full-Stack Developer </em>
         </h4>
-        <div className="contentIntroButtons">
-          <button>
+        <div className="contentIntroButtonsWrapper">
+          <NavLink
+            className="contentIntroButtons"
+            key={"projects"}
+            to={"/projects"}
+          >
             <strong>PROJECTS</strong>
-          </button>
-          <button>
+          </NavLink>
+          <NavLink
+            className="contentIntroButtons"
+            key={"contact"}
+            to={"/contact"}
+          >
             <strong>CONTACT</strong>
-          </button>
+          </NavLink>
         </div>
       </div>
     </div>

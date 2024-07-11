@@ -115,9 +115,13 @@ function Home() {
               I am eager to hear from you, whether you have any questions or
               comments please feel free to get in touch.
             </p>
-            <button className="homeBioContactButton">
+            <NavLink
+              className="homeBioContactButton"
+              key={"contact"}
+              to={"/contact"}
+            >
               <strong>CONTACT</strong>
-            </button>
+            </NavLink>
           </div>
         </div>
       </FadeIn>
