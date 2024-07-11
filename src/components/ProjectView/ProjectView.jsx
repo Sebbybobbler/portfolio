@@ -3,12 +3,12 @@ import "../../assets/css/projectView.css";
 
 const groupProjects = [
   {
-    title: "Peeling Good",
-    image: "./banana-portfolio.png",
+    title: "Hoax Haven",
+    image: "./hoax-haven.png",
     description:
-      "A group frontend project created using HTML, CSS & Vanilla JavaScript.",
-    alt: "homepage of banana merchants website",
-    link: "https://github.com/Sebbybobbler/portfolio-banana",
+      "A group Full-Stack project, primarily focused on backend using ExpressJS, PostgreSQL and React.",
+    alt: "A brightly coloured homepage for a fake-news website",
+    link: "https://hoax-haven.netlify.app/",
   },
   {
     title: "Dagron AI",
@@ -19,43 +19,13 @@ const groupProjects = [
     link: "https://dagron-limited.netlify.app/",
   },
   {
-    title: "Hoax Haven",
-    image: "./hoax-haven.png",
+    title: "Peeling Good",
+    image: "./banana-portfolio.png",
     description:
-      "A group Full-Stack project, primarily focused on backend using ExpressJS, PostgreSQL and React.",
-    alt: "A brightly coloured homepage for a fake-news website",
-    link: "https://hoax-haven.netlify.app/",
+      "A group frontend project created using HTML, CSS & Vanilla JavaScript.",
+    alt: "homepage of banana merchants website",
+    link: "https://github.com/Sebbybobbler/portfolio-banana",
   },
-  // {
-  //   title: "Solar System",
-  //   image: "./cv-pic.jpg",
-  //   description:
-  //     "JavaScript project involving JavaScript to display different elements using the DOM.",
-  //   alt: "Homepage of solar system website",
-  //   link: "https://github.com/Sebbybobbler/portfolio-solar-system",
-  // },
-  // {
-  //   title: "Space Adventure",
-  //   image: adventures,
-  //   description: "Frontend project utilising flexbox and responsive design.",
-  //   alt: "Homepage of a interspace travel agency",
-  //   link: "https://github.com/Sebbybobbler/portfolio-space-adventures",
-  // },
-  // {
-  //   title: "Planet Filter",
-  //   image: filter,
-  //   description: "JavaScript project experimenting with filtering elements",
-  //   alt: "Homepage of planets and searchbar",
-  //   link: "https://github.com/Sebbybobbler/portfolio-filter",
-  // },
-  // {
-  //   title: "Simpon's React",
-  //   image: homer,
-  //   description:
-  //     "Recreation of Homer Simpson's first website WARNING: CLICK AT OWN RISK",
-  //   alt: "Homepage of Homer Simpsons Website.",
-  //   link: "https://github.com/Sebbybobbler/homer-react",
-  // },
 ];
 const reactProjects = [
   {
@@ -91,6 +61,52 @@ const backendProjects = [
     link: "https://catapi-pf3j.onrender.com/randomcat",
   },
 ];
+const otherProjects = [
+  {
+    title: "Homers Website",
+    image: "./homers-website.png",
+    description:
+      "CLICK AT OWN RISK, recreation of Homer's website from the 2000 episode of the Simpson's 'The Computer Wore Menace Shoes'.",
+    alt: "Picture of random gifs assorted on page.",
+    link: "https://homers-website.netlify.app/",
+  },
+  {
+    title: "Space Adventure",
+    image: "./spaceadventure-portfolio.png",
+    description: "Frontend project utilising flexbox and responsive design.",
+    alt: "Homepage of a interspace travel agency",
+    link: "https://github.com/Sebbybobbler/portfolio-space-adventures",
+  },
+  {
+    title: "Solar System",
+    image: "./planet-portfolio.png",
+    description:
+      "JavaScript project using vanilla JavaScript to display different elements using the DOM.",
+    alt: "Homepage of solar system website",
+    link: "https://github.com/Sebbybobbler/portfolio-solar-system",
+  },
+  {
+    title: "Planet Filter",
+    image: "./filter-portfolio.png",
+    description: "JavaScript project experimenting with filtering elements",
+    alt: "Homepage of planets and searchbar",
+    link: "https://github.com/Sebbybobbler/portfolio-filter",
+  },
+  {
+    title: "Physics Particle Predictor",
+    image: "./machine-learning.png",
+    description:
+      "Machine Learning project created in Python. Model trained on particle data to inform whether hypothetical particle is discoverable.",
+    link: "https://github.com/Sebbybobbler/Machine-Learning-Particle-Rank-Predictor-Portoflio/tree/main",
+  },
+  {
+    title: "NHS Wait Time Analysis",
+    image: "./data-science.png",
+    description:
+      "A data science project created in Python. To analyse wait times for consultant diagnostic appointments.",
+    link: "https://github.com/Sebbybobbler/Data-Science-NHS-wait-times-analysis-portfolio/tree/main",
+  },
+];
 function ProjectView() {
   return (
     <div>
@@ -122,6 +138,14 @@ function ProjectView() {
       </div>
       <div className="backendProjectSection">
         <Projects project={backendProjects} n={2} />
+      </div>
+      <div className="projectHeading">
+        <h4>
+          <em>Other Projects</em>
+        </h4>
+      </div>
+      <div className="otherProjectSection">
+        <Projects project={otherProjects} n={2} />
       </div>
     </div>
   );
