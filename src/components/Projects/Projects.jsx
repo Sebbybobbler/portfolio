@@ -60,7 +60,7 @@ function Projects(props) {
   }
 
   return (
-    <div>
+    <div className="projectComponent">
       <ProjectCard state={projectCardAdder} />
       {isButton}
     </div>

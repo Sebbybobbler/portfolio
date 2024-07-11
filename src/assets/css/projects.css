@@ -18,6 +18,8 @@
   margin: 3%;
   padding: 2%;
   box-shadow: 3px 3px 0px 1px rgb(192, 192, 192);
+  min-height: 20em;
+  justify-content: space-around;
 }
 
 .projectCardWrapper:hover {
@@ -38,4 +40,19 @@
 .projectCardWrapper:hover {
   transform: translateX(5px);
   box-shadow: 0 0 0 0;
+}
+
+.showMoreButton {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+}
+
+.projectComponent {
+  display: flex;
+  flex-direction: column;
 }
