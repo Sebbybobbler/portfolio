@@ -13,7 +13,7 @@ function Home() {
         </div>
         <div className="homeSelfie"> </div>
       </div>
-      <FadeIn delay={200}>
+      <FadeIn delay={200} transitionDuration={500}>
         <div className="picAndText reverse">
           <div className="homeBioBlack">
             <p>

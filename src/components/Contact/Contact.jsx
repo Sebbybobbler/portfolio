@@ -3,6 +3,7 @@ import "../../assets/css/contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons/faPhone";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import FadeIn from "react-fade-in";
 
 function Contact() {
   return (
@@ -12,8 +13,11 @@ function Contact() {
           <strong>CONTACT</strong>
           <hr />
         </h2>
+        <h4>
+          <em>Sebastian Davies </em>
+        </h4>
       </div>
-      <div className="contactBioWhite">
+      <FadeIn delay={200} transitionDuration={500} className="contactBioWhite">
         <p>
           I would love to hear from you if you have any questions or
           opportunities.
@@ -40,7 +44,7 @@ function Contact() {
             GitHub
           </a>
         </p>
-      </div>
+      </FadeIn>
     </>
   );
 }

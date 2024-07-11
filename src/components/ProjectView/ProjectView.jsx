@@ -109,7 +109,7 @@ const otherProjects = [
 ];
 function ProjectView() {
   return (
-    <>
+    <div className="projectViewWrapper">
       <div className="projectHeading">
         <h2>
           <strong>PROJECTS</strong>
@@ -147,7 +147,7 @@ function ProjectView() {
       <div className="otherProjectSection">
         <Projects project={otherProjects} n={2} />
       </div>
-    </>
+    </div>
   );
 }
 

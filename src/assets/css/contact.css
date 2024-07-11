@@ -3,19 +3,28 @@
   flex-direction: column;
   background-color: whitesmoke;
   align-items: center;
-  margin: 0 0;
+  margin: 1em 0;
   width: 100%;
+  max-width: 1300px;
+  height: 265px;
+}
+
+.contactHeading h4 {
+  text-decoration: none;
+  font-weight: lighter;
 }
 
 .contactBioWhite {
   display: flex;
+  width: 100%;
   flex-direction: column;
+  align-items: center;
   background-color: white;
-  padding: 0 2em;
-  margin: 1em 0;
-  margin: 0 0;
+  min-width: 100vw;
+  padding-top: 5vh;
+  max-width: 1300px;
 }
-
 .contactBioWhite p {
   line-height: 25px;
+  text-align: center;
 }
