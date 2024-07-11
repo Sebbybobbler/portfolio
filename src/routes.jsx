@@ -1,6 +1,6 @@
 import Root from "./components/Root/Root";
 import Home from "./components/Home/Home";
-import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 import ProjectView from "./components/ProjectView/ProjectView";
 
 const routes = [
@@ -13,8 +13,8 @@ const routes = [
         element: <Home />,
       },
       {
-        path: "about",
-        element: <About />,
+        path: "contact",
+        element: <Contact />,
       },
       {
         path: "projects",

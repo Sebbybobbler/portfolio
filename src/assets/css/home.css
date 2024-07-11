@@ -20,6 +20,8 @@
 }
 
 .homeBioBlack {
+  display: flex;
+  flex-direction: column;
   background-color: black;
   padding: 0 2em;
   margin: 1em 0;
@@ -53,7 +55,6 @@
 }
 
 .homeBioContactButton {
-  display: flex;
   background-color: whitesmoke;
   border: 1px solid black;
   padding: 1em;

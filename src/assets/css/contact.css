@@ -1,0 +1,21 @@
+.contactHeading {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  align-items: center;
+  margin: 0 0;
+  width: 100%;
+}
+
+.contactBioWhite {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 0 2em;
+  margin: 1em 0;
+  margin: 0 0;
+}
+
+.contactBioWhite p {
+  line-height: 25px;
+}
