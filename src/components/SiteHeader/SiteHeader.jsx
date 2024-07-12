@@ -20,7 +20,7 @@ function SiteHeader() {
       />
 
       <div className={`${showNav ? "show" : "noShow"}`}>
-        <SiteNav />
+        <SiteNav navPropSetter={setShowNav} />
       </div>
     </div>
   );
