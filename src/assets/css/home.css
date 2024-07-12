@@ -32,7 +32,7 @@
   border-radius: 100%;
   background-position: center;
   background-size: cover;
-  background-image: url(./cv-pic.jpg);
+  background-image: url(../../../public/cv-pic.jpg);
   margin-bottom: 16px;
 }
 
