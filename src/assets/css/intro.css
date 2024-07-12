@@ -4,6 +4,7 @@
   background-color: whitesmoke;
   align-items: center;
   width: 100%;
+  height: 190px;
 }
 
 .contentBoxIntro {
@@ -15,23 +16,4 @@
 .contentBoxIntro h4 {
   text-decoration: none;
   font-weight: lighter;
-}
-
-.contentIntroButtonsWrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.contentIntroButtons {
-  color: black;
-  background-color: transparent;
-  border: 1px solid black;
-  padding: 1em;
-  margin: 1em;
-  text-decoration: none;
-}
-
-.contentIntroButtons:hover {
-  color: whitesmoke;
-  background-color: black;
 }
