@@ -98,10 +98,6 @@
   font-style: italic;
 }
 
-.fadeAnimation div:nth-child(1) {
-  animation-delay: 5s;
-}
-
 @media (min-width: 1024px) {
   .picAndText {
     flex-direction: row-reverse;
@@ -119,30 +115,6 @@
     height: 200px;
     text-align: center;
     justify-content: center;
-  }
-  .fadeAnimation {
-    animation: fade-in 3s;
-  }
-  .fadeAnimationReverse {
-    animation: fade-in-reverse 3s;
-  }
-
-  @keyframes fade-in-reverse {
-    from {
-      margin-right: -100%;
-    }
-    to {
-      margin-left: inherit;
-    }
-  }
-
-  @keyframes fade-in {
-    from {
-      margin-left: -100%;
-    }
-    to {
-      margin-left: inherit;
-    }
   }
 }
 

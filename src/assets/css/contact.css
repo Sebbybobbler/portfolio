@@ -27,15 +27,3 @@
   line-height: 25px;
   text-align: center;
 }
-
-.fadeAnimationContact {
-  animation: fade-in-contact 2s;
-}
-@keyframes fade-in-contact {
-  from {
-    margin-bottom: 100%;
-  }
-  to {
-    margin-bottom: inherit;
-  }
-}

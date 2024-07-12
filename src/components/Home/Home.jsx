@@ -13,7 +13,7 @@ function Home() {
         <div className="homeSelfie"> </div>
       </div>
 
-      <div className="picAndText reverse fadeAnimation">
+      <div className="picAndText reverse ">
         <div className="homeBioBlack">
           <p>
             Hi there! My name is Sebastian Davies and I'm an enthusiastic
@@ -27,7 +27,7 @@ function Home() {
         </div>
         <img className="homePic" src="./presenting.jpg" />
       </div>
-      <div className="picAndText fadeAnimationReverse">
+      <div className="picAndText ">
         <div className="homeBioGrey">
           <p>
             <strong>Technical Skills:</strong> During the TechNative Academy
@@ -45,7 +45,7 @@ function Home() {
         </div>
         <img src="./project1pic.jpg" className="homePic" />
       </div>
-      <div className="picAndText fadeAnimation reverse">
+      <div className="picAndText  reverse">
         <div className="homeBioBlack">
           <p>
             <strong>Hands On Experience</strong>: Throughout the
@@ -62,7 +62,7 @@ function Home() {
         </div>
         <img src="./technativegroup.jpg" className="homePic" />
       </div>
-      <div className="picAndText fadeAnimationReverse">
+      <div className="picAndText ">
         <div className="homeBioGrey">
           <p>
             <strong>Exposure To Industry Experts</strong>: Each week during the
@@ -76,7 +76,7 @@ function Home() {
         </div>
         <img src="./arduinoday.jpg" className="homePic" />
       </div>
-      <div className="picAndText  fadeAnimation reverse">
+      <div className="picAndText   reverse">
         <div className="homeBioBlack">
           <p>
             <strong>Teamwork</strong>: The bootcamp emphasised a strong culture
@@ -91,7 +91,7 @@ function Home() {
         </div>
         <img src="./finaldaybeach.jpg" className="homePic" />
       </div>
-      <div className="picAndText fadeAnimationReverse">
+      <div className="picAndText ">
         <div className="homeBioGrey">
           <p>
             <strong>Problem Solving</strong>: My background in theoretical
@@ -103,7 +103,7 @@ function Home() {
           </p>
         </div>
       </div>
-      <div className="picAndText fadeAnimation reverse ">
+      <div className="picAndText  reverse ">
         <div className="homeBioBlack homeContact">
           <h4 className="homeBioContactHeading">Get In Touch</h4>
           <p>
