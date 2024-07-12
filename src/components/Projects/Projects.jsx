@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import "../../assets/css/projects.css";
-import FadeIn from "react-fade-in";
 
 function ProjectCard({ state }) {
   const projectCard = state.map((item) => {
@@ -57,9 +56,8 @@ function Projects(props) {
 
   return (
     <div className="projectComponent">
-      <FadeIn delay={200} transitionDuration={500}>
-        <ProjectCard state={projectCardAdder} />
-      </FadeIn>
+      <ProjectCard state={projectCardAdder} />
+
       {isButton}
     </div>
   );
