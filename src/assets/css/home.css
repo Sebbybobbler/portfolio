@@ -43,7 +43,7 @@
 .homeBioBlack {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: #16425b;
   padding: 0 2em;
   margin: 1em 0;
   margin: 0 0;
@@ -57,7 +57,7 @@
 .homeBioGrey {
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  background-color: #f0f7ee;
   line-height: 25px;
   padding: 0 2em;
   margin: 0 0;
@@ -95,7 +95,8 @@
 }
 
 .homeBioContactButton:hover {
-  font-style: italic;
+  background-color: black;
+  color: #f0f7ee;
 }
 
 @media (min-width: 1024px) {
@@ -129,4 +130,10 @@
   .homeBioGrey {
     height: 400px;
   }
+}
+
+.homePic {
+  width: 40%;
+  height: 100%;
+  object-fit: fill/contain/ cover/scale-down/inherit;
 }

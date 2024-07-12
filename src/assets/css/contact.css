@@ -6,6 +6,7 @@
   width: 100%;
   max-width: 1300px;
   height: 190px;
+  justify-content: center;
 }
 
 .contactHeading h4 {

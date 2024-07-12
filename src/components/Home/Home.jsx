@@ -6,12 +6,6 @@ function Home() {
   return (
     <div className="homeWrapper">
       <Intro />
-      <div className="homeheadingSelfie">
-        <div className="homeBioHeading">
-          <h3> About Me</h3>
-        </div>
-        <div className="homeSelfie"> </div>
-      </div>
 
       <div className="picAndText reverse ">
         <div className="homeBioBlack">
@@ -25,7 +19,7 @@ function Home() {
             learning.
           </p>
         </div>
-        <img className="homePic" src="./presenting.jpg" />
+        <img className="homePic" src="./cv-pic.jpg" />
       </div>
       <div className="picAndText ">
         <div className="homeBioGrey">
@@ -60,7 +54,7 @@ function Home() {
             .
           </p>
         </div>
-        <img src="./technativegroup.jpg" className="homePic" />
+        <img src="./presenting.jpg" className="homePic" />
       </div>
       <div className="picAndText ">
         <div className="homeBioGrey">

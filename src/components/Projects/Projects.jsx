@@ -26,6 +26,7 @@ function Projects(props) {
     input.map((item) => item)
   );
 
+  // eslint-disable-next-line no-unused-vars
   const [isButton, setIsButton] = useState(
     <button className="showMoreButton" onClick={handleClick}>
       Show More
@@ -57,8 +58,6 @@ function Projects(props) {
   return (
     <div className="projectComponent">
       <ProjectCard state={projectCardAdder} />
-
-      {isButton}
     </div>
   );
 }

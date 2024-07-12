@@ -115,37 +115,33 @@ function ProjectView() {
           <strong>PROJECTS</strong>
           <hr />
         </h2>
-
-        <h4>
-          <em>Group Projects </em>
-        </h4>
       </div>
       <div className="groupProjectSection">
+        <h4 className="projectSectionHeading">
+          <em>Group Projects </em>
+        </h4>
         <Projects project={groupProjects} n={3} />
       </div>
-      <div className="projectHeading projectHeadingLater">
-        <h4>
+
+      <div className="reactProjectSection">
+        <h4 className="projectSectionHeading">
           <em>React Projects </em>
         </h4>
-      </div>
-      <div className="reactProjectSection">
         <Projects project={reactProjects} n={2} />
       </div>
-      <div className="projectHeading projectHeadingLater">
-        <h4>
+
+      <div className="backendProjectSection">
+        <h4 className="projectSectionHeading">
           <em>Backend Projects</em>
         </h4>
-      </div>
-      <div className="backendProjectSection">
         <Projects project={backendProjects} n={2} />
       </div>
-      <div className="projectHeading projectHeadingLater">
-        <h4>
+
+      <div className="otherProjectSection">
+        <h4 className="projectSectionHeading">
           <em>Other Projects</em>
         </h4>
-      </div>
-      <div className="otherProjectSection">
-        <Projects project={otherProjects} n={2} />
+        <Projects project={otherProjects} n={otherProjects.length} />
       </div>
     </div>
   );

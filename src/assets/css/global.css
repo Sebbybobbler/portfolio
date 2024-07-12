@@ -30,6 +30,9 @@ body {
   background-size: 400% 400%;
   animation: gradient 11s ease infinite;
 }
+h4 {
+  margin: 0;
+}
 
 @media (min-width: 1300px) {
   p {

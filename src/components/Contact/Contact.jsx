@@ -12,9 +12,6 @@ function Contact() {
           <strong>CONTACT</strong>
           <hr />
         </h2>
-        <h4>
-          <em>Sebastian Davies </em>
-        </h4>
       </div>
       <div className="contactBioWhite">
         <p>
