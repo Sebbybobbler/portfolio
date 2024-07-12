@@ -11,7 +11,8 @@
 }
 
 .projectCardWrapper {
-  width: 30%;
+  width: 80%;
+  /* Need to change this width in a media query for desktop ^ */
   display: flex;
   flex-direction: column;
   align-items: center;

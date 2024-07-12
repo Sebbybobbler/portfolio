@@ -4,6 +4,7 @@
   align-items: center;
   z-index: 1;
   max-width: 1300px;
+  gap: 10px;
 }
 
 .picAndText {
@@ -130,10 +131,4 @@
   .homeBioGrey {
     height: 400px;
   }
-}
-
-.homePic {
-  width: 40%;
-  height: 100%;
-  object-fit: fill/contain/ cover/scale-down/inherit;
 }
