@@ -3,19 +3,40 @@ import { useState, useEffect } from "react";
 import "../../assets/css/projects.css";
 
 function ProjectCard({ state }) {
-  const projectCard = state.map((item) => {
+  let stateArray = Array(state.length).fill(false);
+  const [showDetail, setShowDetail] = useState(stateArray);
+  const projectCard = state.map((item, index) => {
     return (
-      <div
-        onClick={() => {
-          window.open(item.link, "blank");
-        }}
-        className="projectCardWrapper"
-        key={item.title}
-      >
-        <h4>{item.title}</h4>
-        <img src={item.image} alt={item.alt} />
-        <p className="description">{item.description}</p>
-      </div>
+      <>
+        <div className="projectCardContainer" key={item.title}>
+          <div
+            onClick={() => {
+              window.open(item.link, "blank");
+            }}
+            className="projectCardWrapper"
+          >
+            <h4>{item.title}</h4>
+            <img src={item.image} alt={item.alt} />
+          </div>
+          <div
+            className="projectCardButton"
+            onClick={() => {
+              showDetail[index] = !showDetail[index];
+              setShowDetail([...showDetail]);
+            }}
+          >
+            <button>Click For More Info</button>
+          </div>
+          <div
+            className={`${
+              showDetail[index] ? "showProjectDetail" : "hideProjectDetail"
+            } projectCardDetailWrapper`}
+          >
+            <p>{item.description}</p>
+            <a href={item.link}>link</a>
+          </div>
+        </div>
+      </>
     );
   });
   return <div className="projects">{projectCard}</div>;

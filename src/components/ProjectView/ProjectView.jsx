@@ -9,6 +9,7 @@ const groupProjects = [
       "A group Full-Stack project, primarily focused on backend using ExpressJS, PostgreSQL and React.",
     alt: "A brightly coloured homepage for a fake-news website",
     link: "https://hoax-haven.netlify.app/",
+    index: 0,
   },
   {
     title: "Dagron AI",

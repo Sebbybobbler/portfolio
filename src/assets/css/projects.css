@@ -10,16 +10,25 @@
   gap: 2%;
 }
 
+.projectCardContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  width: 90%;
+}
+
+.projectCardMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .projectCardWrapper {
-  width: 80%;
+  width: 100%;
   /* Need to change this width in a media query for desktop ^ */
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: whitesmoke;
-  border-radius: 3%;
-  margin: 1%;
-  padding: 2%;
   box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.3);
   min-height: 20em;
   justify-content: space-around;
@@ -27,8 +36,37 @@
   max-height: 420px;
 }
 
-.projectCardWrapper:hover {
+.projectCardButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  background-color: whitesmoke;
+  border: none;
   cursor: pointer;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.3);
+  padding: 3% 0;
+  border-top: 1px solid black;
+}
+
+.projectCardButton button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.projectCardButton:hover {
+  background-color: darkgray;
 }
 
 .projectCardWrapper img {
@@ -43,19 +81,16 @@
   text-align: center;
 }
 
-.showMoreButton {
+.showProjectDetail {
+  background-color: darkgray;
   display: flex;
-  justify-self: center;
-  align-self: center;
-  background-color: transparent;
-  border: 1px solid black;
-  padding: 1em;
-  margin: 1em;
-  cursor: pointer;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
 }
-.showMoreButton:hover {
-  color: whitesmoke;
-  background-color: black;
+
+.hideProjectDetail {
+  display: none;
 }
 
 .projectComponent {
@@ -74,3 +109,17 @@
     font-size: small;
   }
 }
+/* .showMoreButton {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+  cursor: pointer;
+}
+.showMoreButton:hover {
+  color: whitesmoke;
+  background-color: black;
+} */
