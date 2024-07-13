@@ -37,7 +37,7 @@ function Home() {
             <strong>Pandas</strong> and <strong>SciKitLearn</strong>.
           </p>
         </div>
-        <img src="./project1pic.jpg" className="homePic" />
+        <img src="./project1pic.png" className="homePic" />
       </div>
       <div className="picAndText  reverse">
         <div className="homeBioBlack">
