@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import "../../assets/css/projects.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 function ProjectCard({ state }) {
   let stateArray = Array(state.length).fill(false);
   const [showDetail, setShowDetail] = useState(stateArray);
@@ -25,15 +26,25 @@ function ProjectCard({ state }) {
               setShowDetail([...showDetail]);
             }}
           >
-            <button>Click For More Info</button>
-          </div>
-          <div
-            className={`${
-              showDetail[index] ? "showProjectDetail" : "hideProjectDetail"
-            } projectCardDetailWrapper`}
-          >
-            <p>{item.description}</p>
-            <a href={item.link}>link</a>
+            <div
+              className={`${
+                showDetail[index] ? "showProjectDetail" : "hideProjectDetail"
+              } projectCardDetailWrapper`}
+            >
+              <p>
+                <em>{item.description}</em>
+              </p>
+              <a href={item.link}>link</a>
+            </div>
+            <button>
+              {" "}
+              <FontAwesomeIcon
+                className={`${
+                  showDetail[index] ? "projectDetailArrowActive" : ""
+                } projectDetailArrowDown`}
+                icon={faAngleDown}
+              />
+            </button>
           </div>
         </div>
       </>

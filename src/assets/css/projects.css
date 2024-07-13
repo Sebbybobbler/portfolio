@@ -34,6 +34,7 @@
   justify-content: space-around;
   max-width: 420px;
   max-height: 420px;
+  border-radius: 10px 10px 0 0;
 }
 
 .projectCardButton {
@@ -47,8 +48,9 @@
   border: none;
   cursor: pointer;
   box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.3);
-  padding: 3% 0;
+  /* padding: 3% 0; */
   border-top: 1px solid black;
+  border-radius: 0 0 10px 10px;
 }
 
 .projectCardButton button {
@@ -56,7 +58,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: 5px 0;
   padding-block: 0;
   padding-inline: 0;
   background-color: transparent;
@@ -65,9 +67,9 @@
   cursor: pointer;
 }
 
-.projectCardButton:hover {
+/* .projectCardButton:hover {
   background-color: darkgray;
-}
+} */
 
 .projectCardWrapper img {
   width: 80%;
@@ -82,11 +84,25 @@
 }
 
 .showProjectDetail {
-  background-color: darkgray;
+  background-color: #9c9990;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   width: 100%;
+}
+.showProjectDetail p {
+  margin: 5% 5%;
+  color: black;
+}
+.projectDetailArrowDown {
+  width: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.projectDetailArrowActive {
+  transform: rotate(180deg);
 }
 
 .hideProjectDetail {
