@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "../../assets/css/siteNav.css";
 
-function SiteNav() {
+function SiteNav({ navPropSetter }) {
   const navLinks = [
     { label: "Home", url: "/" },
     { label: "Projects", url: "/projects" },
@@ -17,6 +17,9 @@ function SiteNav() {
             }
             key={navLink.url}
             to={navLink.url}
+            onClick={() => {
+              navPropSetter(false);
+            }}
           >
             {navLink.label}
           </NavLink>

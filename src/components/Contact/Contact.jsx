@@ -12,23 +12,20 @@ function Contact() {
           <strong>CONTACT</strong>
           <hr />
         </h2>
-        <h4>
-          <em>Sebastian Davies </em>
-        </h4>
       </div>
       <div className="contactBioWhite">
         <p>
           I would love to hear from you if you have any questions or
           opportunities.
         </p>
-        <p className="fadeAnimationContact">
+        <p>
           <FontAwesomeIcon icon={faEnvelope} />{" "}
           <a href="mailto:seb_davies@hotmail.co.uk">seb_davies@hotmail.co.uk</a>
         </p>
-        <p className="fadeAnimationContact">
+        <p>
           <FontAwesomeIcon icon={faPhone} /> +44 7341 457156
         </p>
-        <p className="fadeAnimationContact">
+        <p>
           <FontAwesomeIcon icon={faLinkedin} />{" "}
           <a
             target="_blank"
@@ -37,7 +34,7 @@ function Contact() {
             LinkedIn
           </a>
         </p>
-        <p className="fadeAnimationContact">
+        <p>
           <FontAwesomeIcon icon={faGithub} />{" "}
           <a target="_blank" href="https://github.com/Sebbybobbler">
             GitHub

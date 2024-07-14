@@ -5,6 +5,8 @@
   display: inline-block; /* Display inline block */
   position: relative; /* Set position relative */
   color: #160f29; /* Set text color */
+  border-bottom: 1px solid #160f29;
+  margin-bottom: -1px;
 }
 
 .inactiveLink {

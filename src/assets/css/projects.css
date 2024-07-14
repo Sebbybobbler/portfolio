@@ -7,31 +7,78 @@
   flex-wrap: wrap;
   width: 100vw;
   max-width: 1300px;
+  gap: 2%;
 }
 
+.projectCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  width: 100%;
+}
+
+.projectCardMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .projectCardWrapper {
-  width: 70%;
+  width: 100%;
+  /* Need to change this width in a media query for desktop ^ */
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: whitesmoke;
-  border-radius: 6%;
-  margin: 3%;
-  padding: 2%;
-  box-shadow: 3px 3px 0px 1px rgb(192, 192, 192);
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.3);
   min-height: 20em;
   justify-content: space-around;
-  max-width: 420px;
+  max-width: 400px;
   max-height: 420px;
+  border-radius: 10px 10px 0 0;
 }
 
-.projectCardWrapper:hover {
-  cursor: pointer;
+.projectCardButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  background-color: whitesmoke;
+  border: none;
+  cursor: auto;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.3);
+  /* padding: 3% 0; */
+  border-top: 1px solid black;
+  border-radius: 0 0 10px 10px;
+  max-width: 400px;
 }
+
+.projectCardButton button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 2% 0;
+  padding-block: 0;
+  padding-inline: 0;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  cursor: auto;
+}
+
+.projectCardButton svg {
+  width: 100%;
+}
+
+/* .projectCardButton:hover {
+  background-color: darkgray;
+} */
 
 .projectCardWrapper img {
   width: 80%;
-  max-width: 250px;
 }
 
 .description {
@@ -41,12 +88,128 @@
   text-align: center;
 }
 
-.projectCardWrapper:hover {
-  transform: translateX(5px);
-  box-shadow: 0 0 0 0;
+.showProjectDetail {
+  background-color: #e9c46a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.showProjectDetail p {
+  margin: 5% 5%;
+  color: black;
+}
+.projectDetailArrowDown {
+  width: 20px;
+  padding: 5px;
+  cursor: pointer;
 }
 
-.showMoreButton {
+.projectDetailArrowActive {
+  transform: rotate(180deg);
+}
+
+.projectDetailLinkWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.projectDetailLink {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+  width: 40%;
+  max-width: 200px;
+  color: black;
+  background-color: whitesmoke;
+}
+
+.projectDetailLink:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.hideProjectDetail {
+  display: none;
+}
+
+.projectComponent {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .projects {
+    flex-direction: row;
+  }
+  .projectCardContainer {
+    width: 100%;
+    padding: 3%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .projectCardWrapper {
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    min-height: 20em;
+  }
+  .hideProjectDetail {
+    background-color: #e9c46a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    min-height: 20em;
+    border-radius: 0 10px 10px 0;
+  }
+  .hideProjectDetail p {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    color: black;
+    height: 100%;
+  }
+  .showProjectDetail {
+    background-color: #e9c46a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    min-height: 20em;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .showProjectDetail p {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    color: black;
+    height: 100%;
+  }
+
+  .projectCardButton button {
+    display: none;
+  }
+  .projectCardButton {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    max-width: none;
+  }
+  .projectCardWrapper p {
+    font-size: small;
+  }
+}
+/* .showMoreButton {
   display: flex;
   justify-self: center;
   align-self: center;
@@ -59,21 +222,4 @@
 .showMoreButton:hover {
   color: whitesmoke;
   background-color: black;
-}
-
-.projectComponent {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 1024px) {
-  .projects {
-    flex-direction: row;
-  }
-  .projectCardWrapper {
-    min-height: 420px;
-  }
-  .projectCardWrapper p {
-    font-size: small;
-  }
-}
+} */

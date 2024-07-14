@@ -3,10 +3,10 @@
   flex-direction: column;
   background-color: whitesmoke;
   align-items: center;
-  margin: 1em 0;
   width: 100%;
   max-width: 1300px;
-  height: 265px;
+  height: 190px;
+  justify-content: center;
 }
 
 .contactHeading h4 {
@@ -27,16 +27,4 @@
 .contactBioWhite p {
   line-height: 25px;
   text-align: center;
-}
-
-.fadeAnimationContact {
-  animation: fade-in-contact 2s;
-}
-@keyframes fade-in-contact {
-  from {
-    margin-bottom: 100%;
-  }
-  to {
-    margin-bottom: inherit;
-  }
 }

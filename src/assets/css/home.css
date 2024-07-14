@@ -43,7 +43,7 @@
 .homeBioBlack {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: #16425b;
   padding: 0 2em;
   margin: 1em 0;
   margin: 0 0;
@@ -57,7 +57,7 @@
 .homeBioGrey {
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  background-color: #f0f7ee;
   line-height: 25px;
   padding: 0 2em;
   margin: 0 0;
@@ -84,6 +84,9 @@
 }
 
 .homeBioContactButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: black;
   text-decoration: none;
   background-color: whitesmoke;
@@ -95,14 +98,11 @@
 }
 
 .homeBioContactButton:hover {
-  font-style: italic;
+  background-color: black;
+  color: #f0f7ee;
 }
 
-.fadeAnimation div:nth-child(1) {
-  animation-delay: 5s;
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 700px) {
   .picAndText {
     flex-direction: row-reverse;
     width: 100%;
@@ -120,33 +120,9 @@
     text-align: center;
     justify-content: center;
   }
-  .fadeAnimation {
-    animation: fade-in 3s;
-  }
-  .fadeAnimationReverse {
-    animation: fade-in-reverse 3s;
-  }
-
-  @keyframes fade-in-reverse {
-    from {
-      margin-right: -100%;
-    }
-    to {
-      margin-left: inherit;
-    }
-  }
-
-  @keyframes fade-in {
-    from {
-      margin-left: -100%;
-    }
-    to {
-      margin-left: inherit;
-    }
-  }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
   .homeWrapper p {
     font-size: larger;
   }

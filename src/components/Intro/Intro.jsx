@@ -11,22 +11,6 @@ function Intro() {
         <h4>
           <em>Full-Stack Developer </em>
         </h4>
-        <div className="contentIntroButtonsWrapper">
-          <NavLink
-            className="contentIntroButtons"
-            key={"projects"}
-            to={"/projects"}
-          >
-            <strong>PROJECTS</strong>
-          </NavLink>
-          <NavLink
-            className="contentIntroButtons"
-            key={"contact"}
-            to={"/contact"}
-          >
-            <strong>CONTACT</strong>
-          </NavLink>
-        </div>
       </div>
     </div>
   );
