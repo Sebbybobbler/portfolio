@@ -10,39 +10,41 @@ function ProjectCard({ state }) {
     return (
       <>
         <div className="projectCardContainer" key={item.title}>
-          <div
-            onClick={() => {
-              window.open(item.link, "blank");
-            }}
-            className="projectCardWrapper"
-          >
+          <div className="projectCardWrapper">
             <h4>{item.title}</h4>
             <img src={item.image} alt={item.alt} />
           </div>
-          <div
-            className="projectCardButton"
-            onClick={() => {
-              showDetail[index] = !showDetail[index];
-              setShowDetail([...showDetail]);
-            }}
-          >
+          <div className="projectCardButton">
             <div
               className={`${
                 showDetail[index] ? "showProjectDetail" : "hideProjectDetail"
               } projectCardDetailWrapper`}
             >
-              <p>
-                <em>{item.description}</em>
-              </p>
-              <a href={item.link}>link</a>
+              <p>{item.description}</p>
+
+              <div className="projectDetailLinkWrapper">
+                <a className="projectDetailLink" href={item.link}>
+                  <strong>GitHub</strong>
+                </a>
+                {item.website ? (
+                  <a className="projectDetailLink" href={item.website}>
+                    <strong>Website</strong>
+                  </a>
+                ) : (
+                  <></>
+                )}
+              </div>
             </div>
             <button>
-              {" "}
               <FontAwesomeIcon
                 className={`${
                   showDetail[index] ? "projectDetailArrowActive" : ""
                 } projectDetailArrowDown`}
                 icon={faAngleDown}
+                onClick={() => {
+                  showDetail[index] = !showDetail[index];
+                  setShowDetail([...showDetail]);
+                }}
               />
             </button>
           </div>

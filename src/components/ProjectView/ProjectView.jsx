@@ -10,8 +10,8 @@ const groupProjects = [
       This project gave me a real hands on experience with PSQL queries and building relational databases from the ground up. 
       Furthermore, it allowed me to gather experience in planning and building user endpoints in express whilst working with a team to avoid blocking and maintain efficient workflow.`,
     alt: "A brightly coloured homepage for a fake-news website",
-    link: "https://hoax-haven.netlify.app/",
-    index: 0,
+    link: "https://github.com/Sebbybobbler/HoaxHaven",
+    website: "https://hoax-haven.netlify.app/",
   },
   {
     title: "Dargon AI",
@@ -20,7 +20,8 @@ const groupProjects = [
     themed AI responses to questions. This project filled me with confidence with using React, Redux and obtaining data via an API. This project was designed to a client brief and
     to a strict deadline. During this project we remained on an all-day call to simulate an in-person workplace and benefited hugely from collaboration.`,
     alt: "Dragon themed AI question bot",
-    link: "https://dagron-limited.netlify.app/",
+    link: "https://github.com/Sebbybobbler/dragon",
+    website: "https://dagron-limited.netlify.app/",
   },
   {
     title: "Peeling Good",
@@ -29,6 +30,7 @@ const groupProjects = [
      I enjoyed creating the logic of JavaScript elements within the website.`,
     alt: "homepage of banana merchants website",
     link: "https://github.com/Sebbybobbler/portfolio-banana",
+    website: "https://technative-academy.github.io/banana/",
   },
 ];
 const reactProjects = [
@@ -38,7 +40,8 @@ const reactProjects = [
     description: `React App incorporating Redux and Async Thunks to fetch dad-jokes using an API. There is also a page which incorporates a tic-tac-toe game, 
       incorporating props and statefulness of React.`,
     alt: "A site with a button which fetches a new dad-joke every time you click it.",
-    link: "https://grand-sunshine-dde8c5.netlify.app/",
+    website: "https://grand-sunshine-dde8c5.netlify.app/",
+    link: "https://github.com/Sebbybobbler/react-redux-playground",
   },
   {
     title: "Appointment Planner",
@@ -46,7 +49,8 @@ const reactProjects = [
     description:
       "A basic React appointment planner and contact diary. This uses React hooks to store state.",
     alt: "A planner to enter contact name, number and email",
-    link: "https://marvelous-bonbon-bb3ab5.netlify.app/contacts",
+    link: "https://github.com/Sebbybobbler/appointment-planner",
+    website: "https://marvelous-bonbon-bb3ab5.netlify.app/contacts",
   },
 ];
 const backendProjects = [
@@ -64,7 +68,8 @@ const backendProjects = [
     description:
       "An API built to record, fetch and randomise cats. On fetch random cat there is some basic html injected from the backend via expressJS.",
     alt: "A paint picture of a cat, with a description and a name.",
-    link: "https://catapi-pf3j.onrender.com/randomcat",
+    website: "https://catapi-pf3j.onrender.com/randomcat",
+    link: "https://github.com/Sebbybobbler/catAPI",
   },
 ];
 const otherProjects = [
@@ -74,7 +79,8 @@ const otherProjects = [
     description: `CLICK AT OWN RISK: recreation of Homer's website from the 2000 episode of the Simpson's 'The Computer Wore Menace Shoes'. A very annoying and light-hearted website created
       in React as an homage to the Simpsons.`,
     alt: "Picture of random gifs assorted on page.",
-    link: "https://homers-website.netlify.app/",
+    website: "https://homers-website.netlify.app/",
+    link: "https://github.com/Sebbybobbler/homer-react",
   },
   {
     title: "Space Adventure",
@@ -83,6 +89,7 @@ const otherProjects = [
       "Frontend project built using HTML & CSS, plan your own space adventure!",
     alt: "Homepage of a interspace travel agency",
     link: "https://github.com/Sebbybobbler/portfolio-space-adventures",
+    website: "https://sebbybobbler.github.io/portfolio-space-adventures/",
   },
   {
     title: "Solar System",
@@ -91,6 +98,7 @@ const otherProjects = [
       "JavaScript project using vanilla JavaScript to display different elements using the DOM. Also utilises the Date object in JavaScript to do calculations for date's on other planets.",
     alt: "Homepage of solar system website",
     link: "https://github.com/Sebbybobbler/portfolio-solar-system",
+    website: "https://sebbybobbler.github.io/portfolio-solar-system/",
   },
 
   {
