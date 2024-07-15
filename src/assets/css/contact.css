@@ -9,11 +9,6 @@
   justify-content: center;
 }
 
-.contactHeading h4 {
-  text-decoration: none;
-  font-weight: lighter;
-}
-
 .contactBioWhite {
   display: flex;
   width: 100%;
@@ -27,4 +22,8 @@
 .contactBioWhite p {
   line-height: 25px;
   text-align: center;
+}
+
+.contactBioWhite a {
+  color: black;
 }
