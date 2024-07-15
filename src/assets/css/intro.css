@@ -1,6 +1,7 @@
 .contentBoxWrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: whitesmoke;
   align-items: center;
   width: 100%;
