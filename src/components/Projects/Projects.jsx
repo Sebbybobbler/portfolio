@@ -20,7 +20,9 @@ function ProjectCard({ state }) {
                 showDetail[index] ? "showProjectDetail" : "hideProjectDetail"
               } projectCardDetailWrapper`}
             >
-              {showDetail[index] ? <></> : <h4>{item.title}</h4>}
+              <div className="projectTitleWidescreen">
+                <h4>{item.title}</h4>
+              </div>
               <p>{item.description}</p>
 
               <div className="projectDetailLinkWrapper">

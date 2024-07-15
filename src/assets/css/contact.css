@@ -1,7 +1,7 @@
 .contactHeading {
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  background-color: #e0e1dd;
   align-items: center;
   width: 100%;
   max-width: 1300px;
@@ -14,16 +14,23 @@
   width: 100%;
   flex-direction: column;
   align-items: center;
-  background-color: white;
-  min-width: 100vw;
+  background-color: #1b263b;
   padding-top: 5vh;
   max-width: 1300px;
+  height: 100vh;
 }
 .contactBioWhite p {
   line-height: 25px;
   text-align: center;
+  color: white;
 }
 
 .contactBioWhite a {
-  color: black;
+  color: white;
+}
+
+@media (max-width: 1300px) {
+  .contactHeading {
+    width: 100vw;
+  }
 }

@@ -1,7 +1,7 @@
 .projectHeading {
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  background-color: #e0e1dd;
   align-items: center;
   width: 100%;
   max-width: 1300px;
@@ -13,10 +13,11 @@
 .projectSectionHeading {
   margin: 1em 0;
   margin-top: 3em;
+  font-weight: 500;
 }
 
 .groupProjectSection {
-  background: #16425b;
+  background: #1b263b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +28,7 @@
 }
 
 .reactProjectSection {
-  background: white;
+  background: #e0e1dd;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +38,7 @@
 .backendProjectSection {
   display: flex;
   flex-direction: column;
-  background: #16425b;
+  background: #1b263b;
   align-items: center;
   padding-bottom: 75px;
 }
@@ -47,7 +48,7 @@
 }
 
 .otherProjectSection {
-  background: white;
+  background: #e0e1dd;
   display: flex;
   flex-direction: column;
   align-items: center;
