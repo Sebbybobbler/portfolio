@@ -11,7 +11,7 @@ function ProjectCard({ state }) {
       <>
         <div className="projectCardContainer" key={item.title}>
           <div className="projectCardWrapper">
-            <h4>{item.title}</h4>
+            <h4 className="projectCardTitle">{item.title}</h4>
             <img src={item.image} alt={item.alt} />
           </div>
           <div className="projectCardButton">
@@ -20,6 +20,7 @@ function ProjectCard({ state }) {
                 showDetail[index] ? "showProjectDetail" : "hideProjectDetail"
               } projectCardDetailWrapper`}
             >
+              {showDetail[index] ? <></> : <h4>{item.title}</h4>}
               <p>{item.description}</p>
 
               <div className="projectDetailLinkWrapper">

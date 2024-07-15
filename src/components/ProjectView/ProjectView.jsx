@@ -74,15 +74,6 @@ const backendProjects = [
 ];
 const otherProjects = [
   {
-    title: "Homers Website",
-    image: "./homers-website.png",
-    description: `CLICK AT OWN RISK: recreation of Homer's website from the 2000 episode of the Simpson's 'The Computer Wore Menace Shoes'. A very annoying and light-hearted website created
-      in React as an homage to the Simpsons.`,
-    alt: "Picture of random gifs assorted on page.",
-    website: "https://homers-website.netlify.app/",
-    link: "https://github.com/Sebbybobbler/homer-react",
-  },
-  {
     title: "Space Adventure",
     image: "./spaceadventure-portfolio.png",
     description:
@@ -105,15 +96,24 @@ const otherProjects = [
     title: "Physics Particle Predictor",
     image: "./machine-learning.png",
     description: `Machine Learning project created in Python and using SciKitLearn, Pandas, NumPy and Matplotlib. Model trained on particle data to inform whether hypothetical particle is discoverable. 
-      Project uses stacking methods to combine multiple different classifiers to improve accuracy.`,
+    Project uses stacking methods to combine multiple different classifiers to improve accuracy.`,
     link: "https://github.com/Sebbybobbler/Machine-Learning-Particle-Rank-Predictor-Portoflio/tree/main",
   },
   {
     title: "NHS Wait Time Analysis",
     image: "./data-science.png",
     description: `A data science project created in Python. Created to analyse wait times for consultant diagnostic appointments. Uses Pandas, NumPy and Matplotlib.
-     Also I draw some statistical inference from the data.`,
+    Also I draw some statistical inference from the data.`,
     link: "https://github.com/Sebbybobbler/Data-Science-NHS-wait-times-analysis-portfolio/tree/main",
+  },
+  {
+    title: "Homers Website",
+    image: "./homers-website.png",
+    description: `CLICK AT OWN RISK: recreation of Homer's website from the 2000 episode of the Simpson's 'The Computer Wore Menace Shoes'. A very annoying and light-hearted website created
+      in React as an homage to the Simpsons.`,
+    alt: "Picture of random gifs assorted on page.",
+    website: "https://homers-website.netlify.app/",
+    link: "https://github.com/Sebbybobbler/homer-react",
   },
 ];
 function ProjectView() {
